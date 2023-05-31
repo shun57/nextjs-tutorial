@@ -1,0 +1,30 @@
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.search-input {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-button {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    color: #ccc;
+}

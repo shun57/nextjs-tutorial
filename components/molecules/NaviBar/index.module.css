@@ -1,0 +1,25 @@
+.navbar {
+    padding: 1rem;
+}
+
+.navbarList {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarItem {
+    margin-right: 1rem;
+    line-height: 2;
+}
+
+.navbarLink {
+    color: #888;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbarLink:hover {
+    color: #333;
+}

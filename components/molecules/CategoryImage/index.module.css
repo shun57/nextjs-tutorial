@@ -1,0 +1,15 @@
+.category-image-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.category-image {
+    object-fit: contain;
+}
+
+.overlay-box {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}

@@ -1,0 +1,40 @@
+.product-image-container {
+    --tw-bg-opacity: 1;
+    background-color: rgb(23 23 23/var(--tw-bg-opacity));
+    width: fit-content;
+    height: 100%;
+    position: relative;
+}
+
+.product-image {
+    transition: transform .6s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+.text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.text {
+    background-color: black;
+    font-weight: bold;
+    padding: 1.25rem;
+    color: white;
+    margin: 0;
+    width: fit-content;
+}
+
+.text-h3 {
+    font-size: 1.875rem;
+    line-height: 2;
+}
+
+.text-p {
+    font-size: 0.875rem;
+    line-height: 1.25;
+}
