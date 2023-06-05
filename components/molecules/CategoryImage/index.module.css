@@ -1,7 +1,7 @@
 .category-image-container {
     display: flex;
-    justify-content: flex-end;
-    height: 100vh;
+    align-items: center;
+    justify-content: center
 }
 
 .category-image {
@@ -9,7 +9,6 @@
 }
 
 .overlay-box {
-    display: flex;
-    align-items: center;
+    margin-left: -8rem;
     z-index: 2;
 }

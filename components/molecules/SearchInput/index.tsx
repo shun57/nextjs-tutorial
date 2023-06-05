@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 import { AiOutlineSearch } from "react-icons/ai";
 
 interface SearchInputProps {
-  value: string;
+  value?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   onSubmit?: (event: React.FormEvent<HTMLFormElement>) => void;
 }
