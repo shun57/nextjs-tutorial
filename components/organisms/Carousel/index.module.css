@@ -1,0 +1,44 @@
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slideContainer {
+    display: flex;
+}
+
+
+.carousel .slideContainer:first-child {
+    animation: marquee 100s -50s linear infinite;
+}
+
+.carousel .slideContainer+.slideContainer {
+    animation: marquee2 100s linear infinite;
+}
+
+.slide {
+    width: auto;
+    flex: none;
+    height: 30vh;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}

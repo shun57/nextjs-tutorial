@@ -10,7 +10,7 @@ const OverlayBox = ({ children, className }: OverlayBoxProps) => {
     background: "black",
     color: "white",
     padding: "1rem",
-    fontSize: "1.5rem",
+    fontSize: "1.25rem",
     fontWeight: "bold",
     lineHeight: "1.75rem",
   };
