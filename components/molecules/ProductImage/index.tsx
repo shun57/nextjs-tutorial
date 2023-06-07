@@ -2,17 +2,22 @@ import React from "react";
 import Image from "next/image";
 import Text from "../../atoms/Text";
 import styles from "./index.module.css";
-import Link from "next/link";
 
 interface ProductImageProps {
   imageUrl: string;
   productName: string;
-  price: number;
+  price: string;
+  containerStyle?: React.CSSProperties;
 }
 
-const ProductImage = ({ imageUrl, productName, price }: ProductImageProps) => {
+const ProductImage = ({
+  imageUrl,
+  productName,
+  price,
+  containerStyle = { backgroundColor: "#171717" },
+}: ProductImageProps) => {
   return (
-    <div className={styles["product-image-container"]}>
+    <div className={styles["product-image-container"]} style={containerStyle}>
       <div className={styles["text-box"]}>
         <Text variant="h3" className={`${styles["text"]} ${styles["text-h3"]}`}>
           {productName}

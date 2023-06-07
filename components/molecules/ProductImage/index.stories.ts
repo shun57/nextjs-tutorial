@@ -12,8 +12,8 @@ type Story = StoryObj<typeof ProductImage>;
 
 export const Default: Story = {
   args: {
-    imageUrl: "/images/cup-black.avif",
-    productName: "Acme Cup",
-    price: 15.00,
+    imageUrl: "/images/sticker-rainbow.avif",
+    productName: "Acme Rainbow Sticker",
+    price: "15.00",
   },
 };
