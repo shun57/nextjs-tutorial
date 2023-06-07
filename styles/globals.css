@@ -15,11 +15,6 @@ a {
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 h1,
 h2,
 p,
@@ -35,4 +30,8 @@ ul {
 button {
   padding: 0.5rem 1rem;
   font-weight: bold;
+}
+
+input {
+  line-height: inherit;
 }

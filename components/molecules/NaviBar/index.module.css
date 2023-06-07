@@ -1,6 +1,5 @@
 .navbarList {
     display: flex;
-    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -12,8 +11,6 @@
 
 .navbarLink {
     color: white;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 .navbarLink:hover {

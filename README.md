@@ -4,12 +4,12 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
 |ディレクトリ|役割|
 | ---- | ---- |
-|components|pagesコンポーネント以外を入れる|
-|- atoms|単一のコンポーネントのみを入れる、再利用性が高い|
-|- molecules|組み合わせて意味のある最小のコンポーネント、ある程度再利用性が高い|
-|- organisms|サイトとして意味のあるコンポーネント、再現性は低い|
-|pages|pagesコンポーネント|
-|- templates||
+|components||
+|- atoms|単一のコンポーネントのみ、再利用性が高い|
+|- molecules|組み合わせて意味のある最小のコンポーネントのみ、ある程度再利用性が高い|
+|- organisms|サイトとして意味のあるコンポーネントのみ、再現性は低い|
+|pages|APIなどから実際の値を受け取りtemplatesを生成する|
+|- templates|あくまで枠組みのみで実際の値は入らず、値を渡されないと成立しないコンポーネント|
 
 
 ### 参考
