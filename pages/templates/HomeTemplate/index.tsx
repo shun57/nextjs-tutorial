@@ -3,7 +3,7 @@ import Header from "../../../components/organisms/Header";
 import MainProducts from "../../../components/organisms/MainProducts";
 import Carousel from "../../../components/organisms/Carousel";
 import Footer from "../../../components/organisms/Footer";
-import CookieConsentDialog from "../../../components/molecules/CookieConsentDialog";
+import CookieConsentDialog from "../../../components/organisms/CookieConsentDialog";
 
 const HomeTemplate = ({ products, categories }) => {
   return (
