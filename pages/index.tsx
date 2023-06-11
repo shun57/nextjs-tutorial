@@ -1,4 +1,5 @@
 import HomeTemplate from "./templates/HomeTemplate";
+import Head from "next/head";
 
 export default function Home() {
   const products = [
@@ -45,5 +46,13 @@ export default function Home() {
     },
   ];
 
-  return <HomeTemplate products={products} categories={categories} />;
+  return (
+    <>
+      <Head>
+        <title>Acme Store</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <HomeTemplate products={products} categories={categories} />
+    </>
+  );
 }
