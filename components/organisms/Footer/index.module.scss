@@ -1,0 +1,106 @@
+@use "../../../styles/variables";
+
+.footer {
+  background-color: variables.$primary-background-color;
+}
+
+.footer-container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-column {
+  display: flex;
+  gap: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #777;
+  @include variables.mq("pc") {
+    flex-direction: row;
+  }
+  @include variables.mq("sp") {
+    flex-direction: column;
+  }
+}
+
+.footer-list {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  @include variables.mq("pc") {
+    grid-auto-flow: column;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include variables.mq("sp") {
+    grid-auto-flow: row;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    @include variables.mq("pc") {
+      padding-bottom: 1rem;
+    }
+    @include variables.mq("sp") {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+  }
+}
+
+.navbarLink {
+  white-space: nowrap;
+}
+
+.navbarLink:hover {
+  color: variables.$primary-hover-color;
+}
+
+.left {
+  flex: 3;
+}
+
+.center {
+  flex: 7;
+}
+
+.right {
+  flex: 2;
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-copy {
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  @include variables.mq("pc") {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include variables.mq("sp") {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-created {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.vercel-logo {
+  margin-left: 0.5rem;
+}

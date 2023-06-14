@@ -1,0 +1,33 @@
+@use "../../../styles/variables";
+
+.menu {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  padding: 1rem;
+  @include variables.z-index("max");
+}
+
+.menu.show {
+  transform: translateX(0%);
+}
+
+.close-btn {
+  color: rgb(245 245 245);
+  border: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.close-icon {
+  font-size: 1.5rem;
+}
+
+.navbarItem {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}

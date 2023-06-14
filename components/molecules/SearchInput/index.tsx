@@ -1,7 +1,7 @@
 import React from "react";
 import TextInput from "../../atoms/TextInput";
 import Button from "../../atoms/Button";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 import { AiOutlineSearch } from "react-icons/ai";
 
 interface SearchInputProps {

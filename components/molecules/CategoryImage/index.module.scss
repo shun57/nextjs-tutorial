@@ -1,0 +1,17 @@
+@use "../../../styles/variables";
+
+.category-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-image {
+  object-fit: contain;
+}
+
+.overlay-box {
+  margin-left: -9rem;
+  @include variables.z-index("second");
+  white-space: nowrap;
+}

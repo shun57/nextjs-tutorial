@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BsGithub } from "react-icons/bs";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 import Text from "../../atoms/Text";
 import Logo from "../../atoms/Logo";
 
