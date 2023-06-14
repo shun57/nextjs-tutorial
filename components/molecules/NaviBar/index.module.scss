@@ -1,0 +1,16 @@
+@use "../../../styles/variables";
+
+.navbarList {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarItem {
+  margin-right: 1rem;
+  line-height: 2;
+}
+
+.navbarLink:hover {
+  color: variables.$primary-hover-color;
+}

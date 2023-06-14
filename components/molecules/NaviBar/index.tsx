@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "../../atoms/Logo";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 
 const NaviBar = () => {
   return (

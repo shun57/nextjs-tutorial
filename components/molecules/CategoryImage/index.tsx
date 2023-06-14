@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import OverlayBox from "../../atoms/OrverlayBox";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 
 interface CategoryImageProps {
   imageUrl: string;

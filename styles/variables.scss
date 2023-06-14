@@ -1,0 +1,26 @@
+// 色
+$primary-font-color: white;
+$primary-background-color: rgb(0 0 0);
+$primary-hover-color: #888;
+
+// z-index
+$z-indexes: (
+  "second": 2,
+  "max": 999,
+);
+
+@mixin z-index($index) {
+  z-index: map-get($z-indexes, $index);
+}
+
+// ブレークポイント
+$breakpoints: (
+  "sp": 768px,
+  "pc": 1920px,
+);
+
+@mixin mq($size) {
+  @media screen and (max-width: #{map-get($breakpoints, $size)}) {
+    @content;
+  }
+}

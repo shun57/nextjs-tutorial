@@ -1,20 +1,21 @@
+@use '../../../styles/variables';
+
 .carousel {
     display: flex;
     overflow: hidden;
     width: 100%;
+
+    .slideContainer:first-child {
+        animation: marquee 100s -50s linear infinite;
+    }
+    .slideContainer+.slideContainer {
+        animation: marquee2 100s linear infinite;
+    }
 }
 
 .slideContainer {
     display: flex;
-}
-
-.carousel .slideContainer:first-child {
-    animation: marquee 100s -50s linear infinite;
-}
-
-.carousel .slideContainer+.slideContainer {
-    animation: marquee2 100s linear infinite;
-}
+} 
 
 .slide {
     width: auto;

@@ -1,7 +1,7 @@
 import React from "react";
 import { RxCross1 } from "react-icons/rx";
 import { FiShoppingBag } from "react-icons/fi";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 import Button from "../../atoms/Button";
 
 interface CartAreaProps {

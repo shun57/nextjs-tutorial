@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Text from "../../atoms/Text";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 
 interface ProductImageProps {
   imageUrl: string;

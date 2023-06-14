@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 import Button from "../../atoms/Button";
 
 const CookieConsentDialog = () => {

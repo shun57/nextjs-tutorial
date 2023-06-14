@@ -1,0 +1,44 @@
+@use "../../../styles/variables";
+
+.product-section {
+  display: grid;
+  @include variables.mq("pc") {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  @include variables.mq("sp") {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.section-left {
+  @include variables.mq("pc") {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+  }
+  @include variables.mq("sp") {
+    grid-column: span 1 / span 1;
+    grid-row: span 1 / span 1;
+  }
+}
+
+.section-right-top {
+  @include variables.mq("pc") {
+    grid-column: span 2 / span 2;
+  }
+  @include variables.mq("sp") {
+    grid-column: span 1 / span 1;
+  }
+  grid-row: span 1 / span 1;
+}
+
+.section-right-bottom {
+  @include variables.mq("pc") {
+    grid-column: span 2 / span 2;
+  }
+  @include variables.mq("sp") {
+    grid-column: span 1 / span 1;
+  }
+  grid-row: span 1 / span 1;
+}
