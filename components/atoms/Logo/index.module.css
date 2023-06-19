@@ -1,0 +1,9 @@
+.centered-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    margin-left: 5px;
+    font-weight: bold;
+}
