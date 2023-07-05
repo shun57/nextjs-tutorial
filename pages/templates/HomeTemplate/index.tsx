@@ -3,7 +3,7 @@ import Header from "../../../components/organisms/Header";
 import MainProducts from "../../../components/organisms/MainProducts";
 import Carousel from "../../../components/organisms/Carousel";
 import Footer from "../../../components/organisms/Footer";
-import CookieConsentDialog from "../../../components/organisms/CookieConsentDialog";
+import CookieConsentDialogContainer from "../../../components/organisms/CookieConsentDialog/container";
 
 const HomeTemplate = ({ products, categories }) => {
   return (
@@ -11,7 +11,7 @@ const HomeTemplate = ({ products, categories }) => {
       <Header />
       <MainProducts products={products} />
       <Carousel categories={categories} />
-      <CookieConsentDialog />
+      <CookieConsentDialogContainer />
       <Footer />
     </div>
   );

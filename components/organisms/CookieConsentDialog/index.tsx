@@ -1,27 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styles from "./index.module.scss";
 import Button from "../../atoms/Button";
 
-const CookieConsentDialog = () => {
-  const [showDialog, setShowDialog] = useState(false);
+interface CookieConsentDialogProps {
+  showDialog: boolean;
+  handleAccept: () => void;
+  handleDeny: () => void;
+}
 
-  useEffect(() => {
-    const hasConsent = localStorage.getItem("cookieConsent");
-    if (!hasConsent) {
-      setShowDialog(true);
-    }
-  }, []);
-
-  const handleAccept = () => {
-    localStorage.setItem("cookieConsent", "true");
-    setShowDialog(false);
-  };
-
-  const handleDeny = () => {
-    localStorage.setItem("cookieConsent", "true");
-    setShowDialog(false);
-  };
-
+const CookieConsentDialog: React.FC<CookieConsentDialogProps> = (
+  props: CookieConsentDialogProps
+) => {
+  const { showDialog, handleAccept, handleDeny } = props;
   return (
     <>
       {showDialog && (
