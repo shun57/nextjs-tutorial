@@ -15,16 +15,12 @@ a {
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 h1,
 h2,
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -35,4 +31,16 @@ ul {
 button {
   padding: 0.5rem 1rem;
   font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: none;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+input {
+  line-height: inherit;
 }
