@@ -1,0 +1,78 @@
+@use "../../../styles/variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: variables.$primary-background-color;
+
+  @include variables.mq("pc") {
+    padding: 1rem 1.5rem;
+  }
+  @include variables.mq("sp") {
+    padding: 1rem;
+  }
+}
+
+.left {
+  width: 33.3%;
+  margin-top: 10px;
+}
+
+.navbar {
+  @include variables.mq("pc") {
+    display: block;
+  }
+  @include variables.mq("sp") {
+    display: none;
+  }
+}
+
+.hamburger {
+  @include variables.mq("pc") {
+    display: none;
+  }
+  @include variables.mq("sp") {
+    display: block;
+    border: none;
+  }
+}
+
+.center {
+  width: 33.4%;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  @include variables.mq("pc") {
+    display: block;
+  }
+  @include variables.mq("sp") {
+    display: none;
+  }
+}
+
+.logo {
+  @include variables.mq("pc") {
+    display: none;
+  }
+  @include variables.mq("sp") {
+    display: block;
+  }
+}
+
+.right {
+  width: 33.3%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cart-button {
+  border: none;
+}
+
+.shpping-icon {
+  color: white;
+  font-size: 1.7rem;
+}
